@@ -36,7 +36,9 @@ Users should be able to:
 
 ## My process
 
-The first thing i had to think about was how many pages i would need to use since you have to be able to see the detail of each country. After deciding it would be two, i chose to use one single file to store all the logic using useContext hook, then, added styles using styled components.
+The challenge in this project was figuring our how to display the feedback on the answers once they were submitted by the user. I decided that i would create new properties in each of the question returned by the API to keep track of the answer selected by the user to campare it with the correct answer contained in the data. Everytime the user selects an answer, the value of the answer will be stored in a property inside the question objects in the data to keep track of it. New properties will be created to keep track of the right of wrong answers as well.
+
+Another challenge in the projects was to randomize the values of the answers in each queastion object since they always come in the same order everytime. This is solved with a function I created called setRandomAnswers wich basically creates an array with indexes, then chooses a random index from thath array, this random index is then used to grab one value from an array that contains all answers in order, then I erase the index used so the function doesnt return the same value.
 
 ### Built with
 
@@ -47,11 +49,11 @@ The first thing i had to think about was how many pages i would need to use sinc
 
 ### What I learned
 
-This is the first project where i have to implement BrowserRouter and useEffect hook. It was interesting figuring out the way to use router with useParams even though the project only has 2 pages, i have a better understanding on how it can be used on multiple pages site. I had some troubles with the dependencies array in the useEffect hook for fetching data the first time the site loads but i learned that you need to let useEffect know about all the data inside it from the render component to keep all data synchronized.
+I made this project maninly as a refresher for my react knowledge and improvemnet of my programming logic.
 
 ### Continued development
 
-I read that Reducers can prevent the use of dependencies in useEffect since you can use an action to reference an operation with values in the render component so id like to use them in my next react project.
+I look forward to create more simple apps like this one because they are very helpful when it comes to consolidate knowledge.
 
 ### Useful resources
 
