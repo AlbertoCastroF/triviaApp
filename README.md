@@ -1,3 +1,71 @@
+This is a solution to the [Scrimba's 2021 react course final project by Bob ziroll](https://scrimba.com/learn/learnreact/section-4-solo-project-co24f49bea8aace7c174082c8).
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- Choose the answer for 5 questions
+- Get a score based on their performance on the quiz
+
+### Screenshot
+
+![Title screen](./src/screenshots/Quizzical.jpg)
+![Main quiz page](./src/screenshots/quiz.jpg)
+![Quiz with answers submitted](./src/screenshots/quizanswers.jpg)
+
+### Links
+
+- Solution URL: [Github](https://github.com/AlbertoCastroF/countriesAPI)
+- Live Site URL: [GithupPages](https://albertocastrof.github.io/countriesAPI)
+
+## My process
+
+The first thing i had to think about was how many pages i would need to use since you have to be able to see the detail of each country. After deciding it would be two, i chose to use one single file to store all the logic using useContext hook, then, added styles using styled components.
+
+### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- [React](https://reactjs.org/) - JS library
+
+### What I learned
+
+This is the first project where i have to implement BrowserRouter and useEffect hook. It was interesting figuring out the way to use router with useParams even though the project only has 2 pages, i have a better understanding on how it can be used on multiple pages site. I had some troubles with the dependencies array in the useEffect hook for fetching data the first time the site loads but i learned that you need to let useEffect know about all the data inside it from the render component to keep all data synchronized.
+
+### Continued development
+
+I read that Reducers can prevent the use of dependencies in useEffect since you can use an action to reference an operation with values in the render component so id like to use them in my next react project.
+
+### Useful resources
+
+- [React Router Guide](https://reactrouter.com/web/guides/quick-start) - Everything about react router.
+- [UseEffect article](https://overreacted.io/a-complete-guide-to-useeffect/#dont-lie-to-react-about-dependencies) - A guide to understand useEffect better.
+
+## Author
+
+- Website - [Alberto Castro Flores](https://www.linkedin.com/in/alberto-castro-flores-02007959/)
+
+## Acknowledgments
+
+Thanks to scrimba community for the continuous support 🙏!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
