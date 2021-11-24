@@ -84,7 +84,7 @@ main {
   margin-right: 1rem;
   margin-bottom: 1rem;
   font-family: Inter;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 12px;
   text-align: center;
@@ -98,7 +98,7 @@ main {
 
 .question {
   font-family: Karla;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 2rem;
   text-align: left;
